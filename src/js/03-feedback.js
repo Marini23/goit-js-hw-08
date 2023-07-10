@@ -13,28 +13,7 @@ textarea.addEventListener(`input`, throttle(onTextareaInput, 500));
 
 populateTextareaInput();
 
-// function onTextareaInput(e) {
-//     formData = {
-//         email: input.value,
-//         message: textarea.value,
-//     }
-//     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-// };
 
-//     function onFormSubmit(e) {
-//         e.preventDefault();
-//         e.currentTarget.reset();
-//         localStorage.removeItem(STORAGE_KEY);
-// };
-
-//     function populateTextareaInput() {
-//         const savedData = localStorage.getItem(STORAGE_KEY);
-//         console.log(savedData);
-//     if (savedData) {
-//         formData = JSON.parse(savedData);
-//         console.log(savedData);
-//     }
-//     }
 
 function onTextareaInput(e) {
     form.addEventListener(`input`, (e) => {
