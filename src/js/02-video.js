@@ -1,2 +1,12 @@
 import Player from '@vimeo/player';
-console.log(Player);
+
+const iframe = document.querySelector('iframe');
+    const player = new Vimeo.Player(iframe);
+
+    player.on('timeupdate', function() {
+        console.log('played the video!');
+    });
+
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
