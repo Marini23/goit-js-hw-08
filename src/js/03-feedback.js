@@ -42,8 +42,8 @@ function onTextareaInput(e) {
     if (savedData) {
         formData = JSON.parse(savedData);
         console.log(savedData);
-        input.value = formData.email;
-        textarea.value = formData.message;
+        input.value = formData.email || ``;
+        textarea.value = formData.message || ``;
         console.log(formData);
     }
     }
